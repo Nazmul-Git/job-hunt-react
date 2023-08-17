@@ -11,7 +11,7 @@ import Root from './Components/Root/Root';
 import JobDetails from './Components/jobDetails/jobDetails';
 import Home from './Components/Home/Home';
 import FirstPage from './Components/firstPage/firstPage';
-import cartProductLoader from './extra';
+
 
 
 
@@ -35,7 +35,8 @@ const router=createBrowserRouter([
       {
         path:'/statistics/:jobId',
         element: <JobDetails></JobDetails>,
-        loader: cartProductLoader
+        loader: ()=>fetch('jobs.json')
+        
       }
       
 

@@ -2,7 +2,7 @@ import { getShoppingCart } from "./Components/Utilities/Utilities";
 
 
 const cartProductLoader= async ()=>{
-    const loadedProducts=await fetch('public/products.json');
+    const loadedProducts=await fetch('public/jobs.json');
     const products=await loadedProducts.json();
 
     // if cart data in a database we must use async await
