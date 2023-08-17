@@ -2,13 +2,16 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import Header from '../Header/Header';
+import Category from '../Category/Category';
+import FeaturedJob from '../FeaturedJob/FeaturedJob';
 
 const Home = () => {
     return (
-        <div className='ml-48 mr-48 mt-16 shadow-lg shadow-gray-900'>
-            <NavBar></NavBar>
+        <div className='ml-48 mr-48 mt-16 shadow-lg shadow-gray-300'>
             <Header></Header>
-            <p>home</p>
+            <Category></Category>
+            <FeaturedJob></FeaturedJob>
+            
         </div>
     );
 };
