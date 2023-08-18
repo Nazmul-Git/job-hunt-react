@@ -5,7 +5,7 @@ import JobCart from '../JobCart/JobCart';
 
 const FeaturedJob = () => {
     const jobs=useLoaderData();
-    console.log(jobs);
+    // console.log(jobs);
 
     return (
         <div  className='mt-20'>

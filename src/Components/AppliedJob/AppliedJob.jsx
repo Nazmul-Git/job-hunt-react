@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import {  useLoaderData, useParams } from 'react-router-dom';
 import { addToDb, getShoppingCart} from '../Utilities/Utilities';
+import ApplyList from '../ApplyList/ApplyList';
 
 
 const AppliedJob = () => {
@@ -18,7 +19,7 @@ const AppliedJob = () => {
     return (
         <div>
             {
-
+               result.map(d=> <ApplyList key={d.id} d={d}></ApplyList>)
             }
         </div>
     );

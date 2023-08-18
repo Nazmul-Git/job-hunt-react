@@ -10,8 +10,9 @@ import {
 import Root from './Components/Root/Root';
 import JobDetails from './Components/jobDetails/jobDetails';
 import Home from './Components/Home/Home';
-import FirstPage from './Components/firstPage/firstPage';
 import AppliedJob from './Components/AppliedJob/AppliedJob';
+import DashBoard from './Components/DashBoard/DashBoard';
+import FeaturedJob from './Components/FeaturedJob/FeaturedJob';
 
 
 
@@ -23,7 +24,7 @@ const router=createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<FirstPage></FirstPage>
+        element:<FeaturedJob></FeaturedJob>
       },
       {
         path:'/statistics',
@@ -34,6 +35,10 @@ const router=createBrowserRouter([
         path:'/statistics/:jobId',
         element: <JobDetails></JobDetails>,
         loader: ()=>fetch('jobs.json')
+      },
+      {
+        path:'/applied-jobs/',
+        element:<DashBoard></DashBoard>,
       },
       {
         path:'/applied-jobs/:ids',
