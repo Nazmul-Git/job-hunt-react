@@ -12,7 +12,8 @@ import JobDetails from './Components/jobDetails/jobDetails';
 import Home from './Components/Home/Home';
 import AppliedJob from './Components/AppliedJob/AppliedJob';
 import DashBoard from './Components/DashBoard/DashBoard';
-import FeaturedJob from './Components/FeaturedJob/FeaturedJob';
+import FirstPage from './Components/firstPage/firstPage';
+
 
 
 
@@ -24,7 +25,8 @@ const router=createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<FeaturedJob></FeaturedJob>
+        element: <FirstPage></FirstPage>,
+        
       },
       {
         path:'/statistics',
