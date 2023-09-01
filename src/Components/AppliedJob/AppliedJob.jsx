@@ -14,7 +14,7 @@ const AppliedJob = () => {
     addToDb(get);
 
     const result = getShoppingCart();
-    console.log(result);
+    // console.log(result);
     
     return (
         <div>

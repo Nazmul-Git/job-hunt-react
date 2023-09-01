@@ -11,7 +11,7 @@ const NavBar = () => {
                 <ActiveLink to="/applied-jobs">Applied Jobs</ActiveLink>
                 <ActiveLink to="/blogs">Blogs</ActiveLink>
             </div>
-            <ActiveLink to="/start-applying" ><button className='bg-blue-400 hover:bg-blue-500 font-bold p-4 rounded-md'>Start Applying</button></ActiveLink>
+            <ActiveLink to="/statistics" ><button className='bg-blue-400 hover:bg-blue-500 font-bold p-4 rounded-md text-white'>Start Applying</button></ActiveLink>
         </nav>
     );
 };
